@@ -2,10 +2,11 @@ body{
 background: #ffffff);
 }
 
-.tv {
+#tv {
      position: absolute;
      width: 800px;
      height: 650px;
+     top:100px;
      margin: 100px;
      left: 500px;
      background-image: linear-gradient(#47476b,#8585ad);
@@ -14,7 +15,7 @@ background: #ffffff);
      text-align: center;
      text-indent: .1em;
    }
- .tv:before {
+ #tv:before {
      content: '';
      position: absolute;
      top: 10%;
@@ -25,8 +26,9 @@ background: #ffffff);
      border-radius: 5% / 50%;
    }
 
-  .moon {
+  #moon {
     position: absolute;
+        top:100px;
         width: 115px;
         height: 125px;
         margin: 165px;
@@ -35,8 +37,9 @@ background: #ffffff);
         box-shadow: 15px 15px 0 0 #f2f2f2;
       }
 
-  .circle1{
+  #circle1{
       position: absolute;
+      top:110px;
       width: 250px;
       height: 125px;
       margin: 350px;
@@ -45,8 +48,9 @@ background: #ffffff);
       border-radius: 50%;
     }
 
-  .oval2{
+  #oval2{
     position: absolute;
+    top: 150px;
     width: 380px;
     height: 85px;
     margin: 390px;
@@ -55,8 +59,9 @@ background: #ffffff);
     border-radius: 100px / 50px;
   }
 
-  .circle{
+  #circle{
     position: absolute;
+    top:140px;
     width: 30px;
     height: 30px;
     margin: 425px;
@@ -65,8 +70,9 @@ background: #ffffff);
     border-radius: 50%
   }
 
-  .circle2{
+  #circle2{
     position: absolute;
+    top:140px;
     width: 30px;
     height: 30px;
     margin: 425px;
@@ -75,8 +81,9 @@ background: #ffffff);
     border-radius: 50%
   }
 
-  .circle3{
+  #circle3{
     position: absolute;
+    top:140px;
     width: 30px;
     height: 30px;
     margin: 425px;
@@ -85,8 +92,9 @@ background: #ffffff);
     border-radius: 50%
   }
 
-  .circle4{
+  #circle4{
     position: absolute;
+    top:140px;
     width: 30px;
     height: 30px;
     margin: 425px;
@@ -95,20 +103,27 @@ background: #ffffff);
     border-radius: 50%
   }
 
-  .star{
+  #yellow{
     position: absolute;
         width: 0;
         height: 0;
-        margin:150px;
-        left:1050px;
+        margin:120px;
+        left:500px;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
         border-bottom: 100px solid #ffff99;
-        -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+        animation: mymove 5s infinite;
+        animation-play-state: paused;
       }
 
-      .star:after {
+      @keyframes mymove {
+      50% {transform: rotate(180deg);}
+    }
+   #yellow:hover{
+     animation-play-state: running;
+   }
+
+      #yellow:after {
         width: 0;
         height: 0;
         border-left: 50px solid transparent;
@@ -120,22 +135,27 @@ background: #ffffff);
         left: -50px;
       }
 
-      .star-2 {
+      #yellow2 {
       width: 0;
       height: 0;
       margin:350px;
-      right: 300px;
+      top:100px;
+      left: 300px;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-bottom: 100px solid #ffff99;
       position: relative;
-      -webkit-animation:spin 4s linear infinite;
-   -moz-animation:spin 4s linear infinite;
-   animation:spin 4s linear infinite;
+      animation: mymove 5s infinite;
+      animation-play-state: paused;
       }
+      @keyframes mymove {
+      50% {transform: rotate(180deg);}
+      }
+   #yellow2:hover{
+     animation-play-state: running;
+   }
 
-
-      .star-2:after {
+      #yellow2:after {
       width: 0;
       height: 0;
       border-left: 50px solid transparent;
@@ -147,17 +167,27 @@ background: #ffffff);
       left: -50px;
       }
 
-      .star_3 {
+      #yellow3 {
       width: 0;
       height: 0;
-      margin:-420px;
-      right:100px;
+      left:50px;
+      bottom:350px;
+      margin:-10px;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-bottom: 100px solid #ffff99;
       position: relative;
+      animation: mymove 5s infinite;
+      animation-play-state: paused;
       }
-      .star_3:after {
+      @keyframes mymove {
+      50% {transform: rotate(180deg);}
+      }
+    #yellow3:hover{
+      animation-play-state:running;
+    }
+
+      #yellow3:after {
       width: 0;
       height: 0;
       border-left: 50px solid transparent;
