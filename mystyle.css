@@ -1,5 +1,5 @@
 body{
-background-image: linear-gradient(to right, #7979d2 , #d9d9f2);
+background: #ffffff);
 }
 
 .tv {
@@ -8,7 +8,7 @@ background-image: linear-gradient(to right, #7979d2 , #d9d9f2);
      height: 650px;
      margin: 100px;
      left: 500px;
-     background: #47476b;
+     background-image: linear-gradient(#47476b,#8585ad);
      border-radius: 50% / 10%;
      color: white;
      text-align: center;
@@ -32,17 +32,17 @@ background-image: linear-gradient(to right, #7979d2 , #d9d9f2);
         margin: 165px;
         left: 500px;
         border-radius: 50%;
-        box-shadow: 15px 15px 0 0 #c2c2d6;
+        box-shadow: 15px 15px 0 0 #f2f2f2;
       }
 
-  .oval{
+  .circle1{
       position: absolute;
       width: 250px;
       height: 125px;
       margin: 350px;
       left:540px;
       background:#b3ffd9 ;
-      border-radius: 100px / 50px;
+      border-radius: 50%;
     }
 
   .oval2{
@@ -56,8 +56,41 @@ background-image: linear-gradient(to right, #7979d2 , #d9d9f2);
   }
 
   .circle{
+    position: absolute;
     width: 30px;
     height: 30px;
+    margin: 425px;
+    left: 450px;
+    background: #b3ffd9;
+    border-radius: 50%
+  }
+
+  .circle2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 425px;
+    left: 530px;
+    background: #b3ffd9;
+    border-radius: 50%
+  }
+
+  .circle3{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 425px;
+    left: 620px;
+    background: #b3ffd9;
+    border-radius: 50%
+  }
+
+  .circle4{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 425px;
+    left: 700px;
     background: #b3ffd9;
     border-radius: 50%
   }
